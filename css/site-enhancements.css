@@ -50,3 +50,8 @@
 .section.light-grey:has(+ .section){padding-bottom:80px}
 .section.light-grey + .section{padding-top:30px}
 @media (max-width:767px){.section.light-grey:has(+ .section){padding-bottom:50px}}
+
+.banner-call-to-action p,
+.footer-call-to-action h6 {
+  text-wrap: balance;
+}

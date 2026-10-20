@@ -16,7 +16,7 @@ Pages use absolute paths (`/css/...`, `/services`), so serve from this directory
 - `index.html`, `404.html`, `about-us/`, `contact-us/`, `pricing/`, `services/` — one folder per page with `index.html`, matching the live URL paths
 - `services/*` — five service detail pages (Webflow CMS items, captured as rendered HTML): standard/special-event portable toilets, restroom trailers, holding tanks, hitch-and-go trailer
 - `back-bay-boxes/` — the Back Bay Boxes pages hosted inside this Webflow project
-- `templates/`, `blog-posts/`, `product/`, `category/`, `posts-categories/`, `checkout/`, `paypal-checkout/`, `order-confirmation/`, `search/` — leftover wCopilot template + ecommerce pages, captured for fidelity (see Caveats)
+- `templates/back-bay-boxes-home/` — Back Bay Boxes home page (the leftover Electfy template/ecommerce pages were removed)
 - `css/`, `js/`, `images/`, `fonts/` — all Webflow CDN assets localized (filenames decoded; HTML still references them `%20`-encoded)
 - `contact.php` — form handler; emails submissions to service@royalflushbbb.com
 - `thank-you/` — post-submission confirmation page (forms redirect here)
@@ -35,7 +35,5 @@ Notes:
 ## Caveats
 
 - **Google Fonts load at runtime** via `webfont.js` — requires internet, or self-host the fonts.
-- `/search`, `/checkout`, `/paypal-checkout` and `/order-confirmation` are Webflow-dynamic features and do not function in a static mirror.
-- The sitemap includes leftover "Electfy" template pages (electrical blog posts, product pages, style guide, etc.) and wCopilot promo markup; all captured for fidelity and can be pruned before deployment.
 - The staging `noindex` robots meta was stripped from all pages.
 - Only published, public pages were captured; any Webflow drafts or Editor-only content is not here.
